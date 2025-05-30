@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        margin: 0;
+        padding: 0;
+      }
+      .marquee-container {
+        background-color: #0288d1;
+        padding: 10px 0;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .marquee-text {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .college-address {
+        background-color: #01579b;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 0.9rem;
+        position: fixed;
+        width: 100%;
+        top: 50px;
+        z-index: 999;
+      }
+      .content {
+        margin-top: 150px;
+        padding: 40px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      h5,
+      h6 {
+        color: #01579b;
+        font-weight: 600;
+      }
+      p {
+        line-height: 1.6;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee-container">
+      <div class="marquee-text">Aurora Deemed To Be University</div>
+    </div>
+    <div class="college-address">
+      Peerzadiguda, Uppal, Hyderabad, Telangana 500098
+    </div>
+    <div class="content container">
+      <h6>About Me: AI & ML Enthusiastic</h6>
+      <h5>Meet the Developer</h5>
+      <p>
+        Hello, I'am passionate MCA Data Science student from
+        <b>Aurora Deemed To Be University</b>.
+      </p>
+      <p>
+        I'am deeply committed to harnessing the power of Artificial Intelligence
+        and Machine Learning to create impactful solutions that drive innovation
+        and improve lives.
+      </p>
+      <h5>My Expertise</h5>
+      <p>
+        With a strong foundation in data science and machine learning, I have
+        worked on diverse projects that challenge the boundaries of AI. From
+        developing predictive models to designing intelligent systems, My aim to
+        push the limits of technology while ensuring accessibility and
+        usability.
+      </p>
+      <h5>Commitment to Excellence</h5>
+      <p>
+        My work is guided by a strong commitment to excellence, ensuring that
+        every AI-driven solution I create is efficient, user-friendly, and
+        impactful. Whether it's data analysis, model development, or real-world
+        AI applications, I strive for perfection in every aspect.
+      </p>
+      <h5>Passion for Health Tech</h5>
+      <p>
+        The development of Health Care Center is a reflection of My dedication
+        to AI-driven healthcare solutions. I believe in leveraging AI to
+        transform healthcare, making it more personalized, accessible, and
+        insightful for everyone.
+      </p>
+      <h5>Join on this Journey</h5>
+      <p>
+        I invite you to explore Health Care Center and witness the power of AI
+        in healthcare. Together, I can empower individuals, enhance well-being,
+        and shape a healthier future through technology.
+      </p>
+      <a href="{{ url_for('index') }}" class="btn btn-primary mt-4"
+        >Back to Home</a
+      >
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
